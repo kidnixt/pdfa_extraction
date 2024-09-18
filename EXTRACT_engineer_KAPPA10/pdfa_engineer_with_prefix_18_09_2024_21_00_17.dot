@@ -1,0 +1,34 @@
+digraph weighted_automaton {
+	margin=0 rankdir=LR size=15
+	node [shape=circle]
+	HOLE [label="HOLE
+1"]
+	HOLE -> HOLE [label="He-0
+She-0
+The engineer presented the project. -0
+explained the calculations.-0"]
+	"The engineer presented the project. " [label="The engineer presented the project. 
+0.0"]
+	"The engineer presented the project. " -> "The engineer presented the project. ,He" [label="He-0.8885568518296879
+She-0.11144314817031213"]
+	"The engineer presented the project. " -> HOLE [label="The engineer presented the project. -0
+explained the calculations.-0"]
+	"The engineer presented the project. ,He" [label="The engineer presented the project. ,He
+0.0"]
+	"The engineer presented the project. ,He" -> "The engineer presented the project. ,He,explained the calculations." [label="explained the calculations.-1.0"]
+	"The engineer presented the project. ,He" -> HOLE [label="He-0
+She-0
+The engineer presented the project. -0"]
+	"The engineer presented the project. ,He,explained the calculations." [label="The engineer presented the project. ,He,explained the calculations.
+1.0"]
+	"The engineer presented the project. ,He,explained the calculations." -> HOLE [label="He-0
+She-0
+The engineer presented the project. -0
+explained the calculations.-0"]
+	"ϵ" [label="ϵ
+0.0" shape=diamond]
+	"ϵ" -> "The engineer presented the project. " [label="The engineer presented the project. -1.0"]
+	"ϵ" -> HOLE [label="He-0
+She-0
+explained the calculations.-0"]
+}
