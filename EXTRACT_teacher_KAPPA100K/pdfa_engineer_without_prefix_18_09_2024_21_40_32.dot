@@ -1,0 +1,68 @@
+digraph weighted_automaton {
+	margin=0 rankdir=LR size=15
+	node [shape=circle]
+	HOLE [label="HOLE
+1"]
+	HOLE -> HOLE [label="He-0
+She-0
+The teacher praised the student. -0
+boy-0
+girl-0
+was very proud of the -0"]
+	"The teacher praised the student. " [label="The teacher praised the student. 
+0.0"]
+	"The teacher praised the student. " -> "The teacher praised the student. ,He" [label="He-0.48931000722509405"]
+	"The teacher praised the student. " -> "The teacher praised the student. ,She" [label="She-0.5106899927749059"]
+	"The teacher praised the student. " -> HOLE [label="The teacher praised the student. -0
+boy-0
+girl-0
+was very proud of the -0"]
+	"The teacher praised the student. ,He" [label="The teacher praised the student. ,He
+0.0"]
+	"The teacher praised the student. ,He" -> "The teacher praised the student. ,He,was very proud of the " [label="was very proud of the -1.0"]
+	"The teacher praised the student. ,He" -> HOLE [label="He-0
+She-0
+The teacher praised the student. -0
+boy-0
+girl-0"]
+	"The teacher praised the student. ,He,was very proud of the " [label="The teacher praised the student. ,He,was very proud of the 
+0.0"]
+	"The teacher praised the student. ,He,was very proud of the " -> "The teacher praised the student. ,He,was very proud of the ,boy" [label="boy-0.05721608959149718
+girl-0.9427839104085028"]
+	"The teacher praised the student. ,He,was very proud of the " -> HOLE [label="He-0
+She-0
+The teacher praised the student. -0
+was very proud of the -0"]
+	"The teacher praised the student. ,He,was very proud of the ,boy" [label="The teacher praised the student. ,He,was very proud of the ,boy
+1.0"]
+	"The teacher praised the student. ,He,was very proud of the ,boy" -> HOLE [label="He-0
+She-0
+The teacher praised the student. -0
+boy-0
+girl-0
+was very proud of the -0"]
+	"The teacher praised the student. ,She" [label="The teacher praised the student. ,She
+0.0"]
+	"The teacher praised the student. ,She" -> "The teacher praised the student. ,She,was very proud of the " [label="was very proud of the -1.0"]
+	"The teacher praised the student. ,She" -> HOLE [label="He-0
+She-0
+The teacher praised the student. -0
+boy-0
+girl-0"]
+	"The teacher praised the student. ,She,was very proud of the " [label="The teacher praised the student. ,She,was very proud of the 
+0.0"]
+	"The teacher praised the student. ,She,was very proud of the " -> "The teacher praised the student. ,He,was very proud of the ,boy" [label="boy-0.020216422882570608
+girl-0.9797835771174294"]
+	"The teacher praised the student. ,She,was very proud of the " -> HOLE [label="He-0
+She-0
+The teacher praised the student. -0
+was very proud of the -0"]
+	"ϵ" [label="ϵ
+0.0" shape=diamond]
+	"ϵ" -> "The teacher praised the student. " [label="The teacher praised the student. -1.0"]
+	"ϵ" -> HOLE [label="He-0
+She-0
+boy-0
+girl-0
+was very proud of the -0"]
+}

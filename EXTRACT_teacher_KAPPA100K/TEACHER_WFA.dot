@@ -1,0 +1,52 @@
+digraph weighted_automaton {
+	margin=0 rankdir=LR size=15
+	node [shape=circle]
+	A [label="A
+0" shape=diamond]
+	A -> B [label="The teacher praised the student. -1"]
+	A -> hole [label="He-0
+was very proud of the -0
+girl-0
+She-0
+boy-0"]
+	B [label="B
+0"]
+	B -> C [label="He-1
+She-1"]
+	B -> hole [label="The teacher praised the student. -0
+was very proud of the -0
+girl-0
+boy-0"]
+	C [label="C
+0"]
+	C -> D [label="was very proud of the -1"]
+	C -> hole [label="He-0
+The teacher praised the student. -0
+girl-0
+She-0
+boy-0"]
+	D [label="D
+0"]
+	D -> E [label="boy-1
+girl-1"]
+	D -> hole [label="He-0
+The teacher praised the student. -0
+was very proud of the -0
+She-0"]
+	E [label="E
+1"]
+	E -> hole [label="He-0
+The teacher praised the student. -0
+was very proud of the -0
+girl-0
+She-0
+boy-0"]
+	hole [label="hole
+0"]
+	hole -> hole [label="He-0
+The teacher praised the student. -0
+was very proud of the -0
+girl-0
+She-0
+boy-0"]
+}
