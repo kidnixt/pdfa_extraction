@@ -1,0 +1,134 @@
+digraph weighted_automaton {
+	margin=0 rankdir=LR size=15
+	node [shape=circle]
+	A [label="A
+0" shape=diamond]
+	A -> B [label="The doctor was very famous. -1"]
+	A -> hole [label=" was very -0
+grateful-0
+saved the life of the-0
+He-0
+She-0
+man, -0
+lucky-0
+black-0
+white-0
+woman, -0"]
+	B [label="B
+0"]
+	B -> C [label="He-1
+She-1"]
+	B -> hole [label=" was very -0
+grateful-0
+saved the life of the-0
+man, -0
+lucky-0
+The doctor was very famous. -0
+black-0
+white-0
+woman, -0"]
+	C [label="C
+0"]
+	C -> D [label="saved the life of the-1"]
+	C -> hole [label=" was very -0
+grateful-0
+He-0
+She-0
+man, -0
+lucky-0
+The doctor was very famous. -0
+black-0
+white-0
+woman, -0"]
+	D [label="D
+0"]
+	D -> E [label="black-1
+white-1"]
+	D -> hole [label=" was very -0
+grateful-0
+saved the life of the-0
+He-0
+She-0
+man, -0
+lucky-0
+The doctor was very famous. -0
+woman, -0"]
+	E [label="E
+0"]
+	E -> F [label="man, -1
+woman, -1"]
+	E -> hole [label=" was very -0
+grateful-0
+saved the life of the-0
+He-0
+She-0
+lucky-0
+The doctor was very famous. -0
+black-0
+white-0"]
+	F [label="F
+0"]
+	F -> G [label="He-1
+She-1"]
+	F -> hole [label=" was very -0
+grateful-0
+saved the life of the-0
+man, -0
+lucky-0
+The doctor was very famous. -0
+black-0
+white-0
+woman, -0"]
+	G [label="G
+0"]
+	G -> H [label=" was very -1"]
+	G -> hole [label="grateful-0
+saved the life of the-0
+He-0
+She-0
+man, -0
+lucky-0
+The doctor was very famous. -0
+black-0
+white-0
+woman, -0"]
+	H [label="H
+0"]
+	H -> I [label="grateful-1
+lucky-1"]
+	H -> hole [label=" was very -0
+saved the life of the-0
+He-0
+She-0
+man, -0
+The doctor was very famous. -0
+black-0
+white-0
+woman, -0"]
+	I [label="I
+1"]
+	I -> hole [label=" was very -0
+grateful-0
+saved the life of the-0
+He-0
+She-0
+man, -0
+lucky-0
+The doctor was very famous. -0
+black-0
+white-0
+woman, -0"]
+	hole [label="hole
+0"]
+	hole -> hole [label=" was very -0
+grateful-0
+saved the life of the-0
+He-0
+She-0
+man, -0
+lucky-0
+The doctor was very famous. -0
+black-0
+white-0
+woman, -0"]
+}
