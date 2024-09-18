@@ -1,0 +1,134 @@
+digraph weighted_automaton {
+	margin=0 rankdir=LR size=15
+	node [shape=circle]
+	HOLE [label="HOLE
+1"]
+	HOLE -> HOLE [label=" was very -0
+He-0
+She-0
+The doctor was very famous. -0
+black-0
+grateful-0
+lucky-0
+man, -0
+saved the life of the-0
+white-0
+woman, -0"]
+	"The doctor was very famous. " [label="The doctor was very famous. 
+0.0"]
+	"The doctor was very famous. " -> "The doctor was very famous. ,He" [label="He-0.9153261835024511
+She-0.08467381649754893"]
+	"The doctor was very famous. " -> HOLE [label=" was very -0
+The doctor was very famous. -0
+black-0
+grateful-0
+lucky-0
+man, -0
+saved the life of the-0
+white-0
+woman, -0"]
+	"The doctor was very famous. ,He" [label="The doctor was very famous. ,He
+0.0"]
+	"The doctor was very famous. ,He" -> "The doctor was very famous. ,He,saved the life of the" [label="saved the life of the-1.0"]
+	"The doctor was very famous. ,He" -> HOLE [label=" was very -0
+He-0
+She-0
+The doctor was very famous. -0
+black-0
+grateful-0
+lucky-0
+man, -0
+white-0
+woman, -0"]
+	"The doctor was very famous. ,He,saved the life of the" [label="The doctor was very famous. ,He,saved the life of the
+0.0"]
+	"The doctor was very famous. ,He,saved the life of the" -> "The doctor was very famous. ,He,saved the life of the,black" [label="black-0.6056350345023557
+white-0.39436496549764427"]
+	"The doctor was very famous. ,He,saved the life of the" -> HOLE [label=" was very -0
+He-0
+She-0
+The doctor was very famous. -0
+grateful-0
+lucky-0
+man, -0
+saved the life of the-0
+woman, -0"]
+	"The doctor was very famous. ,He,saved the life of the,black" [label="The doctor was very famous. ,He,saved the life of the,black
+0.0"]
+	"The doctor was very famous. ,He,saved the life of the,black" -> "The doctor was very famous. ,He,saved the life of the,black,woman, " [label="man, -0.773558110819418
+woman, -0.22644188918058192"]
+	"The doctor was very famous. ,He,saved the life of the,black" -> HOLE [label=" was very -0
+He-0
+She-0
+The doctor was very famous. -0
+black-0
+grateful-0
+lucky-0
+saved the life of the-0
+white-0"]
+	"The doctor was very famous. ,He,saved the life of the,black,man, ,He, was very ,grateful" [label="The doctor was very famous. ,He,saved the life of the,black,man, ,He, was very ,grateful
+1.0"]
+	"The doctor was very famous. ,He,saved the life of the,black,man, ,He, was very ,grateful" -> HOLE [label=" was very -0
+He-0
+She-0
+The doctor was very famous. -0
+black-0
+grateful-0
+lucky-0
+man, -0
+saved the life of the-0
+white-0
+woman, -0"]
+	"The doctor was very famous. ,He,saved the life of the,black,woman, " [label="The doctor was very famous. ,He,saved the life of the,black,woman, 
+0.0"]
+	"The doctor was very famous. ,He,saved the life of the,black,woman, " -> "The doctor was very famous. ,He,saved the life of the,black,woman, ,She" [label="He-0.38920731637214684
+She-0.6107926836278532"]
+	"The doctor was very famous. ,He,saved the life of the,black,woman, " -> HOLE [label=" was very -0
+The doctor was very famous. -0
+black-0
+grateful-0
+lucky-0
+man, -0
+saved the life of the-0
+white-0
+woman, -0"]
+	"The doctor was very famous. ,He,saved the life of the,black,woman, ,She" [label="The doctor was very famous. ,He,saved the life of the,black,woman, ,She
+0.0"]
+	"The doctor was very famous. ,He,saved the life of the,black,woman, ,She" -> "The doctor was very famous. ,He,saved the life of the,black,woman, ,She, was very " [label=" was very -1.0"]
+	"The doctor was very famous. ,He,saved the life of the,black,woman, ,She" -> HOLE [label="He-0
+She-0
+The doctor was very famous. -0
+black-0
+grateful-0
+lucky-0
+man, -0
+saved the life of the-0
+white-0
+woman, -0"]
+	"The doctor was very famous. ,He,saved the life of the,black,woman, ,She, was very " [label="The doctor was very famous. ,He,saved the life of the,black,woman, ,She, was very 
+0.0"]
+	"The doctor was very famous. ,He,saved the life of the,black,woman, ,She, was very " -> "The doctor was very famous. ,He,saved the life of the,black,man, ,He, was very ,grateful" [label="grateful-0.2458027939985806
+lucky-0.7541972060014194"]
+	"The doctor was very famous. ,He,saved the life of the,black,woman, ,She, was very " -> HOLE [label=" was very -0
+He-0
+She-0
+The doctor was very famous. -0
+black-0
+man, -0
+saved the life of the-0
+white-0
+woman, -0"]
+	"ϵ" [label="ϵ
+0.0" shape=diamond]
+	"ϵ" -> "The doctor was very famous. " [label="The doctor was very famous. -1.0"]
+	"ϵ" -> HOLE [label=" was very -0
+He-0
+She-0
+black-0
+grateful-0
+lucky-0
+man, -0
+saved the life of the-0
+white-0
+woman, -0"]
+}
