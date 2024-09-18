@@ -9,7 +9,7 @@ from pythautomata.automata.wheighted_automaton_definition.weighted_state import 
 from pythautomata.automata.wheighted_automaton_definition.probabilistic_deterministic_finite_automaton import \
     ProbabilisticDeterministicFiniteAutomaton
 
-alphabet = Alphabet(frozenset(SymbolStr("The doctor was very famous."), 
+alphabet = Alphabet(frozenset((SymbolStr("The doctor was very famous."), 
                               SymbolStr("He"),
                               SymbolStr("She"),
                               SymbolStr("saved the life of the"),
@@ -17,7 +17,7 @@ alphabet = Alphabet(frozenset(SymbolStr("The doctor was very famous."),
                               SymbolStr("white"),
                               SymbolStr("man"),
                               SymbolStr("woman")
-                            ))
+                            )))
 
 
 # This automaton represent the following regex: "The doctor was very famous. (He|She) saved the life of the (black|white) (man|woman)"
@@ -31,14 +31,14 @@ def get_doctor_wfa(terminal_symbol):
     state_B.add_transition(SymbolStr("She"), state_C, 1)
     state_D = WeightedState("D", 0,0, terminal_symbol)
     state_C.add_transition(SymbolStr("saved the life of the"), state_D, 1)
-    state_E = WeightedState("E", 0,1, terminal_symbol)
+    state_E = WeightedState("E", 0,0, terminal_symbol)
     state_D.add_transition(SymbolStr("black"), state_E, 1)
     state_D.add_transition(SymbolStr("white"), state_E, 1)
     state_F = WeightedState("F", 0,1, terminal_symbol)
     state_E.add_transition(SymbolStr("man"), state_F, 1)
     state_E.add_transition(SymbolStr("woman"), state_F, 1)
 
-    hole = WeightedState("HOLE", 0,0, terminal_symbol)
+    hole = WeightedState("hole", 0,0, terminal_symbol)
 
     states = frozenset({state_A, state_B, state_C, state_D, state_E, state_F, hole})
 
@@ -46,7 +46,7 @@ def get_doctor_wfa(terminal_symbol):
         _, weights, _ = state.get_all_symbol_weights()
         total_weights = sum(weights)
         for symbol in alphabet.symbols:
-            if symbol not in state.transitions:
+            if symbol not in state.transitions_set:
                 state.add_transition(symbol, hole, 0)
 
     comparator = None

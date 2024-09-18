@@ -1,0 +1,74 @@
+digraph weighted_automaton {
+	margin=0 rankdir=LR size=15
+	node [shape=circle]
+	"The doctor was very famous." [label="The doctor was very famous.
+0.0"]
+	"The doctor was very famous." -> "The doctor was very famous.,He" [label="He-0.9607726759552441
+She-0.039227324044755964"]
+	"The doctor was very famous." -> UNKNOWN [label="The doctor was very famous.-0.0
+black-0.0
+man-0.0
+saved the life of the-0.0
+white-0.0
+woman-0.0"]
+	"The doctor was very famous.,He" [label="The doctor was very famous.,He
+0.0"]
+	"The doctor was very famous.,He" -> UNKNOWN [label="He-0.0
+She-0.0
+The doctor was very famous.-0.0
+black-0.0
+man-0.0
+white-0.0
+woman-0.0"]
+	"The doctor was very famous.,He" -> "The doctor was very famous.,He,saved the life of the" [label="saved the life of the-1.0"]
+	"The doctor was very famous.,He,saved the life of the" [label="The doctor was very famous.,He,saved the life of the
+0.0"]
+	"The doctor was very famous.,He,saved the life of the" -> UNKNOWN [label="He-0.0
+She-0.0
+The doctor was very famous.-0.0
+man-0.0
+saved the life of the-0.0
+woman-0.0"]
+	"The doctor was very famous.,He,saved the life of the" -> "The doctor was very famous.,He,saved the life of the,black" [label="black-0.6565240914727872
+white-0.3434759085272127"]
+	"The doctor was very famous.,He,saved the life of the,black" [label="The doctor was very famous.,He,saved the life of the,black
+0.0"]
+	"The doctor was very famous.,He,saved the life of the,black" -> UNKNOWN [label="He-0.0
+She-0.0
+The doctor was very famous.-0.0
+black-0.0
+saved the life of the-0.0
+white-0.0"]
+	"The doctor was very famous.,He,saved the life of the,black" -> "The doctor was very famous.,He,saved the life of the,black,man" [label="man-0.875148175379488
+woman-0.12485182462051198"]
+	"The doctor was very famous.,He,saved the life of the,black,man" [label="The doctor was very famous.,He,saved the life of the,black,man
+1.0"]
+	"The doctor was very famous.,He,saved the life of the,black,man" -> UNKNOWN [label="He-0.0
+She-0.0
+The doctor was very famous.-0.0
+black-0.0
+man-0.0
+saved the life of the-0.0
+white-0.0
+woman-0.0"]
+	UNKNOWN [label="UNKNOWN
+-1"]
+	UNKNOWN -> UNKNOWN [label="He--1
+She--1
+The doctor was very famous.--1
+black--1
+man--1
+saved the life of the--1
+white--1
+woman--1"]
+	"ϵ" [label="ϵ
+0.0" shape=diamond]
+	"ϵ" -> UNKNOWN [label="He-0.0
+She-0.0
+black-0.0
+man-0.0
+saved the life of the-0.0
+white-0.0
+woman-0.0"]
+	"ϵ" -> "The doctor was very famous." [label="The doctor was very famous.-1.0"]
+}
