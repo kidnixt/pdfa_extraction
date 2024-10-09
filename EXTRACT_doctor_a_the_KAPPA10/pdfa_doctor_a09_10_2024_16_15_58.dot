@@ -1,0 +1,124 @@
+digraph weighted_automaton {
+	margin=0 rankdir=LR size=15
+	node [shape=circle]
+	HOLE [label="HOLE
+1"]
+	HOLE -> HOLE [label="He-0
+She-0
+The doctor was very famous.-0
+black-0
+man-0
+saved a-0
+white-0
+woman-0"]
+	"The doctor was very famous." [label="The doctor was very famous.
+0.0"]
+	"The doctor was very famous." -> "The doctor was very famous.,He" [label="He-0.9474213481974543"]
+	"The doctor was very famous." -> "The doctor was very famous.,She" [label="She-0.0525786518025457"]
+	"The doctor was very famous." -> HOLE [label="The doctor was very famous.-0
+black-0
+man-0
+saved a-0
+white-0
+woman-0"]
+	"The doctor was very famous.,He" [label="The doctor was very famous.,He
+0.0"]
+	"The doctor was very famous.,He" -> "The doctor was very famous.,He,saved a" [label="saved a-1.0"]
+	"The doctor was very famous.,He" -> HOLE [label="He-0
+She-0
+The doctor was very famous.-0
+black-0
+man-0
+white-0
+woman-0"]
+	"The doctor was very famous.,He,saved a" [label="The doctor was very famous.,He,saved a
+0.0"]
+	"The doctor was very famous.,He,saved a" -> "The doctor was very famous.,He,saved a,black" [label="black-0.7943836948716954"]
+	"The doctor was very famous.,He,saved a" -> "The doctor was very famous.,He,saved a,white" [label="white-0.20561630512830467"]
+	"The doctor was very famous.,He,saved a" -> HOLE [label="He-0
+She-0
+The doctor was very famous.-0
+man-0
+saved a-0
+woman-0"]
+	"The doctor was very famous.,He,saved a,black" [label="The doctor was very famous.,He,saved a,black
+0.0"]
+	"The doctor was very famous.,He,saved a,black" -> "The doctor was very famous.,He,saved a,black,man" [label="man-0.8047274246898615
+woman-0.19527257531013853"]
+	"The doctor was very famous.,He,saved a,black" -> HOLE [label="He-0
+She-0
+The doctor was very famous.-0
+black-0
+saved a-0
+white-0"]
+	"The doctor was very famous.,He,saved a,black,man" [label="The doctor was very famous.,He,saved a,black,man
+1.0"]
+	"The doctor was very famous.,He,saved a,black,man" -> HOLE [label="He-0
+She-0
+The doctor was very famous.-0
+black-0
+man-0
+saved a-0
+white-0
+woman-0"]
+	"The doctor was very famous.,He,saved a,white" [label="The doctor was very famous.,He,saved a,white
+0.0"]
+	"The doctor was very famous.,He,saved a,white" -> "The doctor was very famous.,He,saved a,black,man" [label="man-0.6202712644017595
+woman-0.3797287355982405"]
+	"The doctor was very famous.,He,saved a,white" -> HOLE [label="He-0
+She-0
+The doctor was very famous.-0
+black-0
+saved a-0
+white-0"]
+	"The doctor was very famous.,She" [label="The doctor was very famous.,She
+0.0"]
+	"The doctor was very famous.,She" -> "The doctor was very famous.,She,saved a" [label="saved a-1.0"]
+	"The doctor was very famous.,She" -> HOLE [label="He-0
+She-0
+The doctor was very famous.-0
+black-0
+man-0
+white-0
+woman-0"]
+	"The doctor was very famous.,She,saved a" [label="The doctor was very famous.,She,saved a
+0.0"]
+	"The doctor was very famous.,She,saved a" -> "The doctor was very famous.,She,saved a,black" [label="black-0.7922257428494742"]
+	"The doctor was very famous.,She,saved a" -> "The doctor was very famous.,She,saved a,white" [label="white-0.20777425715052583"]
+	"The doctor was very famous.,She,saved a" -> HOLE [label="He-0
+She-0
+The doctor was very famous.-0
+man-0
+saved a-0
+woman-0"]
+	"The doctor was very famous.,She,saved a,black" [label="The doctor was very famous.,She,saved a,black
+0.0"]
+	"The doctor was very famous.,She,saved a,black" -> "The doctor was very famous.,He,saved a,black,man" [label="man-0.7449405738414688
+woman-0.25505942615853117"]
+	"The doctor was very famous.,She,saved a,black" -> HOLE [label="He-0
+She-0
+The doctor was very famous.-0
+black-0
+saved a-0
+white-0"]
+	"The doctor was very famous.,She,saved a,white" [label="The doctor was very famous.,She,saved a,white
+0.0"]
+	"The doctor was very famous.,She,saved a,white" -> "The doctor was very famous.,He,saved a,black,man" [label="man-0.5918061946382293
+woman-0.40819380536177075"]
+	"The doctor was very famous.,She,saved a,white" -> HOLE [label="He-0
+She-0
+The doctor was very famous.-0
+black-0
+saved a-0
+white-0"]
+	"ϵ" [label="ϵ
+0.0" shape=diamond]
+	"ϵ" -> "The doctor was very famous." [label="The doctor was very famous.-1.0"]
+	"ϵ" -> HOLE [label="He-0
+She-0
+black-0
+man-0
+saved a-0
+white-0
+woman-0"]
+}
