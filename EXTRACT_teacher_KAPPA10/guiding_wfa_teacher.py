@@ -29,7 +29,7 @@ def get_teacher_wfa(terminal_symbol):
     state_C.add_transition(SymbolStr("was very proud of the "), state_D, 1)
     state_E = WeightedState("E", 0,1, terminal_symbol)
     state_D.add_transition(SymbolStr("boy"), state_E, 1)
-    state_D.add_transition(SymbolStr("girl", state_E, 1))
+    state_D.add_transition(SymbolStr("girl"), state_E, 1)
 
     hole = WeightedState("hole", 0,0, terminal_symbol)
 
