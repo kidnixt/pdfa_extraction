@@ -5,30 +5,30 @@ digraph weighted_automaton {
 0" shape=diamond]
 	A -> B [label="The doctor was very famous. -1"]
 	A -> hole [label="died.-0
-He-0
-She-0"]
+She-0
+He-0"]
 	B [label="B
 0"]
 	B -> C [label="He-1
 She-1"]
-	B -> hole [label="The doctor was very famous. -0
-died.-0"]
+	B -> hole [label="died.-0
+The doctor was very famous. -0"]
 	C [label="C
 0"]
 	C -> D [label="died.-1"]
-	C -> hole [label="The doctor was very famous. -0
-He-0
-She-0"]
+	C -> hole [label="She-0
+The doctor was very famous. -0
+He-0"]
 	D [label="D
 1"]
-	D -> hole [label="The doctor was very famous. -0
-died.-0
-He-0
-She-0"]
+	D -> hole [label="died.-0
+She-0
+The doctor was very famous. -0
+He-0"]
 	hole [label="hole
 0"]
-	hole -> hole [label="The doctor was very famous. -0
-died.-0
-He-0
-She-0"]
+	hole -> hole [label="died.-0
+She-0
+The doctor was very famous. -0
+He-0"]
 }
