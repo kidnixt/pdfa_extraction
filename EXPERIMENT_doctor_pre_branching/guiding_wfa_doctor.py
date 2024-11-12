@@ -94,7 +94,7 @@ def get_doctor_wfa_3(terminal_symbol):
     state_B.add_transition(SymbolStr("He"), state_C, 1)
     state_B.add_transition(SymbolStr("She"), state_C, 1)
     state_D = WeightedState("D", 0,1, terminal_symbol)
-    state_C.add_transition(SymbolStr("died yesterday in."), state_D, 1)
+    state_C.add_transition(SymbolStr("died."), state_D, 1)
 
     hole = WeightedState("hole", 0,0, terminal_symbol)
 

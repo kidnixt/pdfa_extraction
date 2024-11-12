@@ -1,0 +1,22 @@
+digraph weighted_automaton {
+	margin=0 rankdir=LR size=15
+	node [shape=circle]
+	"The doctor was very famous and rich with a huge house in the woods and a luxury car. " [label="The doctor was very famous and rich with a huge house in the woods and a luxury car. 
+0.0"]
+	"The doctor was very famous and rich with a huge house in the woods and a luxury car. " -> UNKNOWN [label="He-0.9421152046184076
+She-0.0578847953815924
+The doctor was very famous and rich with a huge house in the woods and a luxury car. -0.0
+died.-0.0"]
+	UNKNOWN [label="UNKNOWN
+-1"]
+	UNKNOWN -> UNKNOWN [label="He--1
+She--1
+The doctor was very famous and rich with a huge house in the woods and a luxury car. --1
+died.--1"]
+	"ϵ" [label="ϵ
+0.0" shape=diamond]
+	"ϵ" -> UNKNOWN [label="He-0.0
+She-0.0
+died.-0.0"]
+	"ϵ" -> "The doctor was very famous and rich with a huge house in the woods and a luxury car. " [label="The doctor was very famous and rich with a huge house in the woods and a luxury car. -1.0"]
+}

@@ -1,0 +1,34 @@
+digraph weighted_automaton {
+	margin=0 rankdir=LR size=15
+	node [shape=circle]
+	HOLE [label="HOLE
+1"]
+	HOLE -> HOLE [label="He-0
+She-0
+The doctor was very famous and rich. -0
+died.-0"]
+	"The doctor was very famous and rich. " [label="The doctor was very famous and rich. 
+0.0"]
+	"The doctor was very famous and rich. " -> "The doctor was very famous and rich. ,He" [label="He-0.9197400148711312
+She-0.08025998512886878"]
+	"The doctor was very famous and rich. " -> HOLE [label="The doctor was very famous and rich. -0
+died.-0"]
+	"The doctor was very famous and rich. ,He" [label="The doctor was very famous and rich. ,He
+0.0"]
+	"The doctor was very famous and rich. ,He" -> "The doctor was very famous and rich. ,He,died." [label="died.-1.0"]
+	"The doctor was very famous and rich. ,He" -> HOLE [label="He-0
+She-0
+The doctor was very famous and rich. -0"]
+	"The doctor was very famous and rich. ,He,died." [label="The doctor was very famous and rich. ,He,died.
+1.0"]
+	"The doctor was very famous and rich. ,He,died." -> HOLE [label="He-0
+She-0
+The doctor was very famous and rich. -0
+died.-0"]
+	"ϵ" [label="ϵ
+0.0" shape=diamond]
+	"ϵ" -> "The doctor was very famous and rich. " [label="The doctor was very famous and rich. -1.0"]
+	"ϵ" -> HOLE [label="He-0
+She-0
+died.-0"]
+}
